@@ -1,0 +1,56 @@
+{
+    "user": {
+        "id": 1,
+        "reference": 1234567890,
+        "password": "password"
+    },
+    "lost_items": [
+        {
+            "id": 1,
+            "name": "Laptop",
+            "description": "2020 Macbook Pro",
+            "location_lost": "Home",
+            "status": "lost",
+            "image": "/logo192.png",
+            "tags": ["electronic"],
+            "time_lost": "2022-01-01T12:00:00Z",
+            "owners_contact": "+2333456780",
+            "media_handles": {
+                "whatsApp": "02345678",
+                "facebook": "Charles"
+            }
+        },
+        {
+            "id": 2,
+            "name": "Text book",
+            "description": "rme text book",
+            "location_lost": "Work",
+            "status": "found",
+            "image": "/logo192.png",
+            "tags": ["book"],
+            "time_lost": "2022-01-01T12:00:00Z",
+            "owners_contact": "+2333456780",
+            "media_handles": {
+                "facebook": "mends"
+            }
+        }
+    ],
+    "found_items": [
+        {
+            "id": 1,
+            "name": "Shoes",
+            "description": "Nike sneakers",
+            "location_found": "Kt hall",
+            "retrival_location": "Hilda",
+            "status": "found",
+            "image": "/logo192.png",
+            "tags": ["shoes"],
+            "time_found": "2022-01-01T12:00:00Z",
+            "founder_contact": "+2334567890",
+            "media_handles": {
+                "facebook": "mends",
+                "contact2": "+23345678909"
+            }
+        }
+    ]
+}
