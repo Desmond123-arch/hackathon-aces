@@ -1,0 +1,20 @@
+{
+    "found_items": [
+        {
+            "id": 1,
+            "name": "Shoes",
+            "description": "Nike sneakers",
+            "location_found": "Kt hall",
+            "retrival_location": "Hilda",
+            "status": "found",
+            "image": "/logo192.png",
+            "tags": ["shoes"],
+            "time_found": "2022-01-01T12:00:00Z",
+            "founder_contact": "+2334567890",
+            "media_handles": {
+                "facebook": "mends",
+                "contact2": "+23345678909"
+            }
+        }
+    ]
+}
