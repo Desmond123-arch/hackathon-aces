@@ -83,16 +83,6 @@ export function Register() {
             <Button type="submit" className="w-full">
               Sign Up
             </Button>
-            <div className="grid grid-cols-2 gap-4">
-              <Button variant="outline" className="w-full">
-                <GithubIcon className="mr-2 h-4 w-4" />
-                GitHub
-              </Button>
-              <Button variant="outline" className="w-full">
-                <ChromeIcon className="mr-2 h-4 w-4" />
-                Google
-              </Button>
-            </div>
           </div>
         </div>
       </div>
