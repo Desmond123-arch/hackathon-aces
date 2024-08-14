@@ -5,7 +5,9 @@ const nodemailer = require("nodemailer");
 const app = express();
 app.use(express.json());
 
-const PORT = process.env.PORT || 5000;
+// Start server
+app.listen(5000, () => console.log(`Server running on port 5000`));
+
 
 const LOST_ITEMS_FILE = "./lost_items.json";
 const FOUND_ITEMS_FILE = "./found_items.json";
@@ -46,6 +48,9 @@ const foundItems = loadData(FOUND_ITEMS_FILE);
 const users = loadData(USERS_FILE);
 
 // Lost items endpoints
+app.get("/lost-items", (req, res) => {
+    res.json(lost_items);
+});
 app.post("/lost-items", (req, res) => {
     const lostItem = req.body;
     lostItem.status = "lost";
@@ -77,9 +82,6 @@ app.delete("/lost-items/:id", (req, res) => {
     } else {
         res.status(404).json({ message: "Lost item not found" });
     }
-});
-app.get("/lost-items", (req, res) => {
-    res.json(lost_items);
 });
 app.get("/lost-items/search/:name", (req, res) => {
     const { name } = req.query;
@@ -157,6 +159,3 @@ app.post("/login", (req, res) => {
         res.status(401).json({ message: "Invalid username or password" });
     }
 });
-
-// Start server
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
